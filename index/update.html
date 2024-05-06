@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %} update {% endblock title %}
+
+
+{% block bg_color %}
+pink
+{% endblock bg_color %}
+
+{% block content %} 
+<form action="" method="post">
+<label for="name">name:</label>
+<input type="text" name="name" value="{{ s.name }}" required>  <br> <br>
+<label for="age">age:</label>
+<input type="text" name="age" value="{{ s.age }}" required>  <br> <br> 
+<input type="submit" value="upadte">
+</form>
+{% endblock content %}
+
